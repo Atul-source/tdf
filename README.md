@@ -48,7 +48,7 @@ The payload will look more like this standard JSON:
 | name                | string                                         | ratelimiting                                                   | Name of the eBPF Program                                                                                                         |
 | seq_id              | number                                         | `1`                                                            | Position of the eBPF program in the chain. Count starts at 1.                                                                    |
 | artifact            | string                                         | `"l3af_ratelimiting.tar.gz"`                                   | Userspace eBPF program binary and kernel eBPF byte code in tar.gz format     
-ebpf_package_repo_url | string         | Ebpf package repository url.  If it is not provided default kfrepo url used
+ebpf_package_repo_url | string         | "http://www.exampleebpf.com/l3af_ratelimiting.tar.gz"      |Ebpf package repository url.  If it is not provided default kfrepo url used
 |                                                  |
 | map_name            | string                                         | `"/sys/fs/bpf/ep1_next_prog_array"`                            | Chaining program map in the file system with path. This should match the eBPF program code.                                      |
 | cmd_start           | string                                         | `"ratelimiting"`                                               | The command used to start the eBPF program. Usually the userspace eBPF program binary name.                                      |
@@ -81,4 +81,3 @@ LTS (Focal Fossa), then we would look for the artifact at:
 |name|string|`"rl_drop_count_map"`|The name of the map where metrics are stored|
 |key|number|0|The index in the map specified by `name` where metrics are stored|
 |aggregator|string|scalar|The type of metrics aggregation to use for the configured metric sampling interval. Supported values are `"scalar"`, `"max-rate"`, and `"avg"`.|
-# tdf
