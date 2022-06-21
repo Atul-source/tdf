@@ -51,8 +51,7 @@ The payload will look more like this standard JSON:
 |
 | ebpf_package_repo_url | string         | `"https://l3af.io/"`     | eBPF package repository URL.  If it is not provided default URL is used.
 |                                                  |
-| map_name            | string                                         | `"/sys/fs/bpf/ep1_next_prog_array"`                            | Chaining program map in the file system with path. This should match the eBPF program code.                                    
-|
+| map_name            | string                                         | `"/sys/fs/bpf/ep1_next_prog_array"`                            | Chaining program map in the file system with path. This should match the eBPF program code.                                      |
 | cmd_start           | string                                         | `"ratelimiting"`                                               | The command used to start the eBPF program. Usually the userspace eBPF program binary name.                                      |
 | cmd_stop            | string                                         |                                                                | The command used stop the eBPF program                                                                                           |
 | cmd_status          | string                                         |                                                                | The command used to get the status of the eBPF program                                                                           |
