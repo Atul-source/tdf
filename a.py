@@ -1,4 +1,4 @@
 print("HELLO GHAR CHALO")
-x = 4
+y = 4
 for i in range(x):
     print(i)
