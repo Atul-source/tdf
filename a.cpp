@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
 int main(){
-  int y;
-  cout << y + y + 2 << endl;
+  int z;
+  cout << z + z + 2 << endl;
 }
